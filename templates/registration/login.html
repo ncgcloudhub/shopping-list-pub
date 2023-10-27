@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Shopping List App</title>
+    <!-- You can include additional styles or CSS frameworks here -->
+</head>
+<body>
+    <div>
+        <h2>Login</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Login</button>
+        </form>
+        <!-- Optional: link to the password reset or registration page -->
+        <p><a href="{% url 'password_reset' %}">Forgot your password?</a></p>
+    </div>
+</body>
+</html>

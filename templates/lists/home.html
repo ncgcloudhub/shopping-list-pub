@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Your Shopping List</h2>
+    <form method="post">
+        {% csrf_token %}
+        <label for="name">Item:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="category">Category:</label>
+        <input type="text" id="category" name="category" required>
+        <button type="submit">Add</button>
+    </form>
+    <ul>
+    {% for item in items %}
+        <li>
+            {{ item.name }} ({{ item.category.name }})
+            <a href="{% url 'delete_item' item.id %}">Delete</a>
+        </li>
+    {% endfor %}
+    </ul>
+{% endblock %}

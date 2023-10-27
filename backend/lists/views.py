@@ -3,6 +3,8 @@ from django.http import HttpResponse
 from .models import Item, Category
 from .forms import ItemForm  # We'll create this form next
 from django.contrib.auth.decorators import login_required
+from rest_framework import generics
+from .serializers import ItemSerializer
 
 
 
@@ -42,3 +44,7 @@ def add_item(request):
     else:
         form = ItemForm()
     return render(request, 'lists/add_item.html', {'form': form})
+
+class ItemList(generics.ListCreateAPIView):
+    queryset = Item.objects.all()
+    serializer_class = ItemSerializer

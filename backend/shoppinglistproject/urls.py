@@ -20,7 +20,7 @@ from . import views  # Add this import at the top
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path('lists/', include('lists.urls')),  # <- this is the new line
+    path('lists/', include('lists.urls')),
     path('', views.root_view, name='root'),
     path('accounts/', include('django.contrib.auth.urls')),  # New line
 ]

@@ -3,6 +3,8 @@
 import os
 import sys
 
+sys.path.append('E:\\Github\\orgs\\ncgcloudhub\\shopping-list-app\\shopping-list-pub\\backend')
+
 
 def main():
     """Run administrative tasks."""

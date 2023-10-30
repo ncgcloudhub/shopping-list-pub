@@ -78,12 +78,12 @@ function ShoppingList() {
 
     const theme = createTheme({
       palette: {
-        mode: 'light', // This can be 'dark' or 'light'.
+        mode: 'dark',
         primary: {
-          main: '#1976d2', // Choose your main primary color
+          main: '#1976d2',
         },
         secondary: {
-          main: '#dc004e', // Choose your main secondary color
+          main: '#dc004e',
         },
       },
     });

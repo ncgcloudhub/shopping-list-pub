@@ -89,3 +89,6 @@ The exact packages and versions will depend on what's installed in your virtual 
 ```
 
 Remember, always keep your `requirements.txt` updated when you add new packages to your project, as this ensures consistency across different development and production environments.
+
+# E:\Github\orgs\ncgcloudhub\shopping-list-app\shopping-list-pub\
+# py .\backend\manage.py runserver

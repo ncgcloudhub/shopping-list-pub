@@ -1,7 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
-import ItemList from './ItemList';  // Import the ItemList component
-import React from 'react';
+import ShoppingList from './components/ShoppingList';  // Import the ShoppingList component
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
@@ -9,10 +8,9 @@ function App() {
     <div className="App">
       <h1>Welcome to the Shopping List App</h1>
       <p>Learn React and Django by building a shopping list app!</p>
-      <ItemList />  // Render the ItemList component
+      <ShoppingList />  {/* Render the ShoppingList component */}
     </div>
   );
 }
-
 
 export default App;
